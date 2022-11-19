@@ -51,7 +51,7 @@ const getAllNotesHandler = () => ({
 const getNoteByIdHandler = (request, h) => {
   const { id } = request.params;
 
-  const note = notes.filter((n) => n.id === Number(id))[0];
+  const note = notes.filter((n) => n.id === id)[0];
   console.log(note);
   console.log(notes);
   //   console.log(id);
